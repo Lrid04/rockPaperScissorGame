@@ -1,12 +1,14 @@
 from random import randrange
 
 class BackEnd:
-    total_player_wins: int
-    total_computer_wins: int
-    options: list[1, 2, 3]
-    player_choice: str
-    computer_choice: str
 
+    def __init__(self):
+        self.total_wins = total_wins
+        self.total_losses = total_losses
+        self.options = [1, 2, 3]
+        self.player_choice = player_choice
+        self.computer_choice = computer_choice
+    
     def pick_option(self):
         if self.options == 1:
             self.player_choice = "Rock"
@@ -36,9 +38,4 @@ class BackEnd:
             total_computer_wins += 1
             return "Computer wins!"
 
-    def __init__(self, total_wins, total_losses, options, player_choice, computer_choice):
-        self.total_wins = total_wins
-        self.total_losses = total_losses
-        self.options = options
-        self.player_choice = player_choice
-        self.computer_choice = computer_choice
+    
