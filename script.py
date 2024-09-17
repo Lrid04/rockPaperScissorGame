@@ -9,14 +9,15 @@ app.secret_key = "shh"
 def index():
     return render_template("index.html")
 
-@app.route("/game")
+@app.route("/game", methods=['POST'])
 def game():
+    my_game = BackEnd
+
     return render_template("game.html")
 
 @app.route("/result")
 def result():
-    ret_val = request.args.get('id')
-    return render_template("result.html", ret_val=ret_val)
+    return render_template("result.html")
 
 
 if __name__ == "__main__":
