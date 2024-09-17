@@ -10,16 +10,23 @@
 
   <h2> select your weapon</h2>
   {% block content %}
-    <form action="/game" method="post">
-        <label for="rock"><img src="../static/rock.png"></label>
-        <input type="submit" id="rock" name="rock"><br>
-        <label for="Paper"><img src="../static/paper.png"></label>
-        <input type="submit" id="Paper" name="Paper"><br>
-        <label for="Scissors"><img src="../static/bigscissors.png"></label>
-        <input type="submit" id="Scissors" name="rock"><br>
-        <label for="WACK"><img src="../static/schockedface.png"></label>
-        <input type="submit" id="WACK" name="rock"><br>
-    </form>
+<!--    <form action="/game" method="post">-->
+        <!-- Landon Way -->
+        <a href="/result?id=rock"><img alt="an image of a rock" src="../static/rock.png" /></a>
+        <a href="/result?id=paper"><img alt="an image of paper" src="../static/paper.png"></a>
+        <a href="/result?id=scissor"><img alt="an image of scissor" src="../static/bigscissors.png"></a>
+        <a href="/result?id=wack"><img alt="an image of a reaction image" src="../static/schockedface.png"></a>
+        
+        <!-- garrets way -->
+<!--        <label for="rock"><img alt="an image of a rock" src="../static/rock.png" /></label>-->
+<!--        <input type="submit" id="rock" name="rock"><br>-->
+<!--        <label for="Paper"><img src="../static/paper.png"></label>-->
+<!--        <input type="submit" id="Paper" name="Paper"><br>-->
+<!--        <label for="Scissors"><img src="../static/bigscissors.png"></label>-->
+<!--        <input type="submit" id="Scissors" name="rock"><br>-->
+<!--        <label for="WACK"><img src="../static/schockedface.png"></label>-->
+<!--        <input type="submit" id="WACK" name="rock"><br>-->
+<!--    </form>-->
   {% endblock %}
 </body>
 </html>
