@@ -16,6 +16,7 @@ def game():
 @app.route("/result")
 def result():
     ret_val = request.args.get('id')
+
     return render_template("result.html", ret_val=ret_val)
 
 
