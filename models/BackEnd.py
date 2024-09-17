@@ -10,12 +10,23 @@ class BackEnd:
         self.computer_choice = computer_choice
     
     def pick_option(self):
-        if self.options == 1:
-            self.player_choice = "Rock"
-        elif self.options == 2:
-            self.player_choice = "Paper"
-        else:
-            self.player_choice = "Scissors"
+        match self.options:
+            case 1:
+                self.player_choice = "rock"
+            case 2:
+                self.player_choice = "paper"
+            case 3:
+                self.player_choice = "scissor"
+            case _:
+                return "no choice"
+
+        # Aidens way
+        # if self.options == 1:
+        #     self.player_choice = "Rock"
+        # elif self.options == 2:
+        #     self.player_choice = "Paper"
+        # else:
+        #     self.player_choice = "Scissors"
 
     def computer_option(self):
         computer_picked = randrange(1, 3)
