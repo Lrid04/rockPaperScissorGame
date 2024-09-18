@@ -8,7 +8,7 @@ class BackEnd:
         self.options = [1, 2, 3]
         self.player_choice = player_choice
         self.computer_choice = computer_choice
-    
+
     def pick_option(self):
         match self.options:
             case 1:
@@ -38,7 +38,7 @@ class BackEnd:
             self.computer_choice = "Scissors"
 
     def result(self):
-        ret_val = request.arg.get('id')
+
 
     # def rock_paper_scissors(player_choice, computer_choice, total_player_wins, total_computer_wins):
     #     if player_choice == computer_choice:
@@ -52,4 +52,3 @@ class BackEnd:
     #         total_computer_wins += 1
     #         return "Computer wins!"
 
-    
